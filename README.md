@@ -25,3 +25,9 @@ find / -type f -iname "*.deb" -exec du -sh {} + | sort -rh | head -10
 ```
 [Source](https://www.rosehosting.com/blog/find-large-files-linux/)
 
+5. create tar file; multiple files/paths
+tar -cvf file_name.tar <path_to_directory>
+tar -cvf file_name.tar <path_to_file1> <path_to_file2> <path_to_file3>
+    c – Create a new .tar archive file
+    v – Verbose mode to show the files being progressed
+    f – Name of the archive file (can be STDOUT if the filename is replaced by -)
